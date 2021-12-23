@@ -1,4 +1,4 @@
-package com.example.biststockwallet.data
+package com.example.biststockwallet.model
 
 import android.os.Parcelable
 import androidx.room.Entity
@@ -8,10 +8,10 @@ import kotlinx.android.parcel.Parcelize
 @Entity(tableName = "stock_table")
 @Parcelize
 data class Stock(
-    val name: String,
-    val price: Float,
-    val averageCost: Float,
-    val quantity: Int,
+    var name: String,
+    var price: Float,
+    var averageCost: Float,
+    var quantity: Int,
     @PrimaryKey(autoGenerate = true) val id: Int = 0
 ) : Parcelable {
 

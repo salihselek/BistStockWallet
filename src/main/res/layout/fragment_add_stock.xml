@@ -13,11 +13,26 @@
         android:layout_height="wrap_content"
         android:text="Hisse Kodu" />
 
-    <androidx.appcompat.widget.AppCompatSpinner
-        android:id="@+id/spinner_stock"
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/text_view_selected_stock"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/support_simple_spinner_dropdown_item" />
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="THYAO" />
+
+    <SearchView
+        android:id="@+id/search_view_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_stocks"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        tools:itemCount="5" />
 
     <TextView
         android:id="@+id/text_view_title_price"
